@@ -1,1 +1,56 @@
-# Gestion_Alumnos
+# Gestion Alumnos
+
+- Aplicación que debe llevar el control de los alumnos de los cursos DIM, para lo cual debe permitir dar de alta un curso nuevo, asignándole alumnos cargando para cada uno de ellos los datos de la ficha del alumno, incluyendo una foto y una serie de datos personales y militares, así como datos de vehículos que vaya a usar el alumno durante el curso.
+- Al dar de alta un alumno, se generará un usuario y contraseña para poder acceder a su portal a modificar los datos y visualizar su expediente.
+- El sistema permitirá introducir las notas de los alumnos en las asignaturas que se cursan durante el curso. Sólo el personal autorizado podrá introducir notas.
+- El sistema permitirá introducir las faltas de asistencia de los alumnos. Sólo el personal autorizado podrá introducir estas faltas de asistencia.
+- El sistema permitirá introducir los permisos que solicitan los alumnos. Sólo el personal autorizado podrá introducir los permisos.
+- El expediente de un alumno, incluirá además de los datos aportados por él mismo, lo siguiente:
+  -
+    - Expediente de Notas, pudiendo ver en todo momento las notas que hasta ese momento tiene cargadas.
+    - Faltas de Asistencia, pudiendo ver en todo momento las faltas de asistencia a clase que tiene anotadas.
+    - Permisos, pudiendo ver en todo momento los permisos que ha solicitado.
+- El sistema debe permitir sacar listado de los alumnos por antigüedad con la foto y sin la foto.
+- El sistema debe permitir obtener un listado de las notas de una asignatura, así como una lista de los alumnos con la nota media ordenados de mayor a menor nota.
+- El sistema debe permitir obtener una lista de datos de contacto de los alumnos:
+  -
+    - Empleo
+    - Nombre y Apellidos
+    - DNI
+    - Email
+    - Teléfono
+
+- CRUD Cursos
+  - Id
+  - Nombre
+  - Fecha Inicio
+  - Fecha Fin
+  - Resolución publicación
+  - BOD publicación
+  - Observaciones
+
+- CRUD Asignaturas
+  - Id
+  - Nombre
+  - Créditos
+  - Profesor
+
+- CRUD Alumnos
+  - Datos de la Ficha
+- Permisos
+  - Alumno
+  - Fecha solicitud
+  - Desde
+  - Hasta
+  - Días
+  - Motivo
+  - Autorizado
+- Faltas Asistencia
+  - Alumno
+  - Fecha Falta
+  - Horas
+  - Motivo
+- Notas
+  - Nota
+  - Alumno
+  - Asignatura
