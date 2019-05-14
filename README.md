@@ -1,6 +1,6 @@
 # Gestion Alumnos
 
-- Aplicación que debe llevar el control de los alumnos de los cursos DIM, para lo cual debe permitir dar de alta un curso nuevo, asignándole alumnos cargando para cada uno de ellos los datos de la ficha del alumno, incluyendo una foto y una serie de datos personales y militares, así como datos de vehículos que vaya a usar el alumno durante el curso.
+- Aplicación que debe llevar el control de los alumnos de los cursos DIM, para lo cual debe permitir dar de alta un curso nuevo, asignándole alumnos cargando para cada uno de ellos los datos de la [ficha del alumno](archivos/Ficha/index.html), incluyendo una foto y una serie de datos personales y militares, así como datos de vehículos que vaya a usar el alumno durante el curso.
 - Al dar de alta un alumno, se generará un usuario y contraseña para poder acceder a su portal a modificar los datos y visualizar su expediente.
 - El sistema permitirá introducir las notas de los alumnos en las asignaturas que se cursan durante el curso. Sólo el personal autorizado podrá introducir notas.
 - El sistema permitirá introducir las faltas de asistencia de los alumnos. Sólo el personal autorizado podrá introducir estas faltas de asistencia.
