@@ -22,15 +22,15 @@
 
 2.1.2.        INTERFACES DE HARDWARE.        
 
-2.1.3.        INTERFACES DE SOFTWARE.        
+2.1.3.        [INTERFACES DE SOFTWARE.](documentos/requisitosSoftware.md)        
 
-2.1.4.        INTERFACES DE COMUNICACIONES.        
+2.1.4.        [INTERFACES DE COMUNICACIONES.](documentos/requisitosComunicaciones.md)        
 
 2.1.5.        [REQUISITOS FUNCIONALES.](documentos/requisitosFuncionales.md) 
 
-2.1.6         [REQUISITOS NO FUNCIONALES.](documentos/requisitosNoFuncionales.md)
+2.1.6         [REQUISITOS DE RENDIMIENTO.](documentos/requisitosRendimiento.md)
 
-2.1.7.        REQUISITOS DE SEGURIDAD.        
+2.1.7.        [REQUISITOS DE SEGURIDAD.](documentos/requisitosSeguridad.md)        
 
 2.1.8.        REQUISITOS DE MANTENIMIENTO.        
 
@@ -50,11 +50,11 @@
 
 ## **3.**        **DEFINICIÓN DE INTERFACES DE USUARIO.**        
 
-**3.1.**         **ESPECIFICACIÓN DE PRINCIPIOS GENERALES DE LA INTERFAZ.**        
+**3.1.**         [**ESPECIFICACIÓN DE PRINCIPIOS GENERALES DE LA INTERFAZ.**](documentos/especificacionInterfaz.md)        
 
 **3.2.**         **IDENTIFICACIÓN DE PERFILES Y DIÁLOGOS.**         
 
-**3.3.**         **ESPECIFICACIÓN DE FORMATOS INDIVIDUALES DE LA INTERFAZ DE PANTALLA.**         
+**3.3.**         [**ESPECIFICACIÓN DE FORMATOS INDIVIDUALES DE LA INTERFAZ DE PANTALLA.**](documentos/formatoInterfazDePantalla.md)         
 
 ## **4.**        **APROBACIÓN DEL ERS.**        
 
