@@ -1,3 +1,6 @@
+## **2.2.2**   **ESPECIFICACION CASOS DE USO**
+
+
 | **Caso de Uso** | **Configurar Sistema** | **CU1** |
 | --- | --- | --- |
 | **Actores** | ACADEMIA |

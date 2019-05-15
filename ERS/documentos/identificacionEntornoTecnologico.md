@@ -1,4 +1,4 @@
-**IDENTIFICACIÓN DEL ENTORNO TECNOLÓGICO**
+## **1.5**   **IDENTIFICACIÓN DEL ENTORNO TECNOLÓGICO**
 
 En lo que se refiere al hardware, las academias, como miembros de la organización, disponen de los ordenadores necesarios para utilizar la aplicación, el único requisito que deben cumplir es disponer de conexión a la red interna de la organización.
 

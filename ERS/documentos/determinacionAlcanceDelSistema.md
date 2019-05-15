@@ -1,4 +1,4 @@
-**1.1.** **DETERMINACIÓN DEL ALCANCE DEL SISTEMA**
+## **1.1.** **DETERMINACIÓN DEL ALCANCE DEL SISTEMA**
 
 SGAL tendrá como propósito general realizar la gestión de los cursos que se desarrollen en la ACADEMIA, abarcando la gestión de los alumnos que en ellos participen y de sus expedientes académicos.
 

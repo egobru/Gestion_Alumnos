@@ -1,4 +1,4 @@
- **1.2.** **GLOSARIO DE TÉRMINOS Y ABREVIATURAS**
+ ## **1.2.** **GLOSARIO DE TÉRMINOS Y ABREVIATURAS**
 
 Se define un glosario de términos del ámbito del negocio, con el fin de conseguir una mayor precisión en la especificación del sistema de información.
 
