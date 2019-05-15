@@ -5,7 +5,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA |
 | **Tipo** | Primario |
-| **Referencias** |  RF1 RF2 RF3|   |
+| **Referencias** |  RSEG1 RF1 RF2|   |
 | **Precondición** | El actor, se encuentra autenticado en el sistema con perfil ACADEMIA |
 | **Postcondición** | . |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -18,7 +18,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA |
 | **Tipo** | Primario |
-| **Referencias** |  RF1 RF2 RF3|   |
+| **Referencias** |  RSEG1 RF1 RF2|   |
 | **Precondición** | El actor, se encuentra autenticado en el sistema con perfil ACADEMIA |
 | **Postcondición** | El sistema una vez comprobado los filtros introducidos por el actor, accede a la base de datos y muestra una lista con los departamentos que cumplan las condiciones de filtrado… |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -31,7 +31,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA |
 | **Tipo** | Primario |
-| **Referencias** | RF4 RF5 | CU2 |
+| **Referencias** | RF3 RF4 | CU2 |
 | **Precondición** | El actor ha realizado la consulta lista Departamentos |
 | **Postcondición** | El sistema realiza una de las acciones CRUD sobre el departamento Seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -42,7 +42,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF5 RF6 RF7  |   |
+| **Referencias** | RF4 RF5 RF6  |   |
 | **Precondición** | El actor, se encuentra autenticado en el sistema con su perfil |
 | **Postcondición** | El sistema una vez comprobado los filtros introducidos por el actor, accede a la base de datos y muestra una lista con los Alumnos que cumplan las condiciones de filtrado… |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -55,7 +55,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO, |
 | **Tipo** | Primario |
-| **Referencias** | RF5 RF6 RF7  | CU4 |
+| **Referencias** | RF4 RF5 RF6  | CU4 |
 | **Precondición** | El actor ha realizado la consulta lista de Alumnos |
 | **Postcondición** | El sistema accede a la base de datos y muestra una lista con los datos del Alumno seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -68,7 +68,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO, ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** |  RF5 RF6 RF7 RF10 RF11 RF12 RF13 RF14 RF15 |  CU5 |
+| **Referencias** |  RF4 RF5 RF6 RF9 RF10 RF11 RF12 RF13 RF14 |  CU5 |
 | **Precondición** | El actor ha realizado la consulta de Alumno |
 | **Postcondición** | El sistema realiza una de las acciones CRUD sobre el Alumno Seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -81,7 +81,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF6 RF7 RF8 RF9 RF10 RF17 RF18 |   |
+| **Referencias** | RF5 RF6 RF7 RF8 RF9 RF16 RF17 |   |
 | **Precondición** | El actor, se encuentra autenticado en el sistema con su perfil |
 | **Postcondición** | El sistema una vez comprobado los filtros introducidos por el actor, accede a la base de datos y muestra una lista con los Cursos que cumplan las condiciones de filtrado… |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -94,7 +94,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO, |
 | **Tipo** | Primario |
-| **Referencias** |  RF4 RF6 RF7 RF8 RF9 RF10 RF17 RF18  |  CU7 |
+| **Referencias** | RF3 RF5 RF6 RF7 RF RF9 RF16 RF17  |  CU7 |
 | **Precondición** | El actor ha realizado la consulta lista de Cursos |
 | **Postcondición** | El sistema accede a la base de datos y muestra una lista con los datos del Curso seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -106,7 +106,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF4 RF5 RF6 RF7 RF8 RF9 RF10  |  CU8 |
+| **Referencias** | RF3 RF4 RF5 RF6 RF7 RF8 RF9 |  CU8 |
 | **Precondición** | El actor ha realizado la consulta de Curso |
 | **Postcondición** | El sistema realiza una de las acciones CU(Create, Update) sobre el Curso Seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -119,7 +119,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** |  RF4 RF18 |  CU9, CU16 |
+| **Referencias** |  RF3 RF17 |  CU9, CU16 |
 | **Precondición** | El actor ha realizado la consulta de Curso |
 | **Postcondición** | El sistema realiza la eliminación sobre el Curso Seleccionado que incluye la eliminación de datos filiación Alumnos |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -132,7 +132,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** |  RF10 | CU8, CU15 |
+| **Referencias** |  RF9 | CU8, CU15 |
 | **Precondición** | El actor ha realizado la consulta de Curso |
 | **Postcondición** | El sistema genera un nuevo curso con los mismos alumnos, borrando las asignaturas y permitiendo asignar nuevas asignaturas |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -145,7 +145,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF5 RF6 RF7 RF8 RF9  | CU1, CU9, CU17 |
+| **Referencias** | RF4 RF5 RF6 RF7 RF8  | CU1, CU9, CU17 |
 | **Precondición** | El actor ha realizado la consulta de Curso |
 | **Postcondición** | El sistema genera un nuevo curso con las mismas asignaturas, desasignado los alumnos y permitiendo asignación de nuevos alumnos |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -158,7 +158,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF4  | CU8, CU16 |
+| **Referencias** | RF3  | CU8, CU16 |
 | **Precondición** | El actor ha realizado la consulta de Curso |
 | **Postcondición** | El sistema elimina datos filiación alumnos asignados al curso cerrado y cambia de ubicación en la base de datos el curso cerrado para que no se pueda modificar |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -171,7 +171,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO, ACADEMIA, ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** | RF4 RF8 RF9 RF10 RF12 RF13 RF16 RF17 RF18 |  C14, CU8 |
+| **Referencias** | RF3 RF7 RF8 RF11 RF12 RF13 RF16 RF17 |  C14, CU8 |
 | **Precondición** | El actor ha realizado la consulta lista de ASIGNATURAS |
 | **Postcondición** | El sistema accede a la base de datos y muestra una lista con los datos de la Asignatura seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -184,7 +184,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** |  RF4 RF8 RF9 RF10 RF13 RF16 RF17 | CU1 CU9 |
+| **Referencias** |  RF3 RF7 RF8 RF9 RF12 RF15 RF16 | CU1 CU9 |
 | **Precondición** | El actor ha realizado la consulta de Asignaturas |
 | **Postcondición** | El sistema realiza una de las acciones CRUD sobre la asignatura Seleccionada |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -197,7 +197,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** |  RF4 RF7 RF12 | CU5, CU13 |
+| **Referencias** |  RF3 RF6 RF11 | CU5, CU13 |
 | **Precondición** | El actor ha cerrado un curso |
 | **Postcondición** | El sistema accede a la base de datos y elimina los datos de filiación de los alumnos del curso cerrado y cambia de ubicación el curso cerrado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -210,7 +210,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF6  | CU1, CU10, CU13 |
+| **Referencias** | RF5  | CU1, CU10, CU13 |
 | **Precondición** | El actor: ha consultado un alumno o ha realizado mantenimiento de un curso o ha Duplicado un curso |
 | **Postcondición** | El sistema accede a la base de datos y relaciona a un alumno con un curso. |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -223,7 +223,7 @@
 | --- | --- | --- |
 | **Actores** | ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** | RF16  | CU1 |
+| **Referencias** | RF15  | CU1 |
 | **Precondición** | El actor, se encuentra autenticado en el sistema con perfil ALUMNO |
 | **Postcondición** | El sistema accede a la base de datos muestra los datos de los cursos del ALUMNO validado en el sistema |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -236,7 +236,7 @@
 | --- | --- | --- |
 | **Actores** | ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** |  RF12 RF16 | CU1 CU20 |
+| **Referencias** |  RF11 RF15 | CU1 CU20 |
 | **Precondición** | El actor, ha consultado el listado de sus cursos |
 | **Postcondición** | El sistema accede a la base de datos muestra los datos del curso seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -249,7 +249,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO, ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** | RF1 RF2 RF3 RF4 RF6 RF7 | CU1 |
+| **Referencias** | RSEG1 RF1 RF2 RF3 RF5 RF6 | CU1 |
 | **Precondición** | El actor, se encuentra autenticado en el sistema con su perfil |
 | **Postcondición** | El sistema una vez comprobado los filtros introducidos por el actor, accede a la base de datos y muestra una lista con los Usuarios que cumplan las condiciones de filtrado… |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -262,7 +262,7 @@
 | --- | --- | --- |
 | **Actores** | ACADEMIA, DEPARTAMENTO, ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** | RF12 RF16 RF17  |   |
+| **Referencias** | RF11 RF15 RF16  |   |
 | **Precondición** | El actor se encuentra en la consulta de Lista de Usuarios |
 | **Postcondición** | El sistema realiza una de las acciones CRUD sobre el Usuario seleccionado |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -274,7 +274,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF13  |   |
+| **Referencias** | RF12  |   |
 | **Precondición** | El actor se encuentra en mantenimiento de Alumno |
 | **Postcondición** | El sistema realiza una asignación de una nota una asignatura del Alumno |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -287,7 +287,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF14  |   |
+| **Referencias** | RF13  |   |
 | **Precondición** | El actor se encuentra en mantenimiento de Alumno |
 | **Postcondición** | El sistema accede a la base de datos y escribe una falta a Clase del Alumno |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -300,7 +300,7 @@
 | --- | --- | --- |
 | **Actores** | ALUMNO |
 | **Tipo** | Primario |
-| **Referencias** |  RF5 RF6 RF7 RF15 RF16 | CU5 |
+| **Referencias** |  RF4 RF5 RF6 RF14 RF15 | CU5 |
 | **Precondición** | El actor se encuentra en Consultar Alumno |
 | **Postcondición** | El sistema accede a la base de datos y escribe una solicitud de permiso del Alumno. 
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -313,7 +313,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF15  | CU24 |
+| **Referencias** | RF14  | CU24 |
 | **Precondición** | El actor se encuentra en mantenimiento Alumno |
 | **Postcondición** | El sistema accede a la base de datos y realiza CRUD sobre la solicitud Permiso de Alumno |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
@@ -326,7 +326,7 @@
 | --- | --- | --- |
 | **Actores** | DEPARTAMENTO |
 | **Tipo** | Primario |
-| **Referencias** | RF5  | CU5 |
+| **Referencias** | RF4  | CU5 |
 | **Precondición** | El actor se encuentra en MANTENIMIENTO ALUMNO |
 | **Postcondición** | El sistema accede a la base de datos y realiza la creación de un alumno que implica  la creación de un usuario tipo Alumno |
 | **Autor** | Analista | Fecha | 11/05/19 | Versión | 1.0 |
