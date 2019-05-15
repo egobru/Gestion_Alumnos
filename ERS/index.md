@@ -2,9 +2,9 @@
 
 1.        DEFINICIÓN DEL SISTEMA.        
 
-**1.1.**         **DETERMINACIÓN DEL ALCANCE DEL SISTEMA.**         
+**1.1.**         **[DETERMINACIÓN DEL ALCANCE DEL SISTEMA.](determinacionAlcanceDelSistema.md)**         
 
-**1.2.**         **GLOSARIO DE TERMINOS Y ABREVIATURAS.**         
+**1.2.**         **[GLOSARIO DE TERMINOS Y ABREVIATURAS.](glosariodeTerminosYAbreviaturas.md)**         
 
 **1.3.**         **[MODELO DE NEGOCIO.](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=modelo%20de%20negocio.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FDptoSIC%2FGestion_Alumnos%2Fmaster%2FERS%2Fmodelo%2520de%2520negocio.drawio)**         
 
