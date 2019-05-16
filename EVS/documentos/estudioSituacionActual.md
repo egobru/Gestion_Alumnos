@@ -6,8 +6,8 @@ El actual sistema de gestión de alumnos comprende una base de datos realizada e
 
 ## **EVS 2.2.- IDENTIFICACIÓN DE LOS USUARIOS PARTICIPANTES EN EL ESTUDIO DE LA SITUACIÓN ACTUAL.**
 
-- --Equipo 1 de trabajo (3 alumnos)
-- --Cliente final: profesor de la asignatura.
+- Equipo 1 de trabajo (3 alumnos)
+- Cliente final: profesor de la asignatura.
 
 ## **EVS 2.3.- DESCRIPCIÓN DE LOS SISTEMAS DE INFORMACIÓN EXISTENTES**
 
@@ -17,10 +17,10 @@ El tutor es el que realiza los diferentes listados necesarios durante la realiza
 
 Los problemas que actualmente se observan con el sistema actual son:
 
-- --Archivado en local de los diferentes listados del curso.
-- --Acceso único por parte del tutor a dichos listados, siendo muy inaccesible por parte del resto de profesores/alumnos.
-- --Acceso desde local de los diferentes documentos.
-- --Los alumnos no pueden consultar sus propias notas.
+- Archivado en local de los diferentes listados del curso.
+- Acceso único por parte del tutor a dichos listados, siendo muy inaccesible por parte del resto de profesores/alumnos.
+- Acceso desde local de los diferentes documentos.
+- Los alumnos no pueden consultar sus propias notas.
 
 Todo esto hace que el sistema sea ineficaz, haciendo muy viable una mejora sustanciosa que proporcione unas funcionalidades propias necesarias para el departamento.
 

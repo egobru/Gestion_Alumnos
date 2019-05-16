@@ -13,13 +13,12 @@ Para optimizar y facilitar tanto el control de alumnos como la gestión del curs
 
 1. Catálogo objetivo del EVS.
 
-- --Detectar las necesidades de información requeridas para el sistema.
-- --Conocer las limitaciones técnicas y legales para el trato de información personal de carácter sensible protegida por la Ley Orgánica de Protección de Datos (LOPD).
-- --Estudiar las posibilidades que ofrecen los SI,s existentes con los que tenga que integrarse la nueva aplicación.
-- --Delimitar un catálogo de requisitos que permita terminar el proceso de diseño no más tarde del día 30 de junio.
+- Detectar las necesidades de información requeridas para el sistema.
+- Conocer las limitaciones técnicas y legales para el trato de información personal de carácter sensible protegida por la Ley Orgánica de Protección de Datos (LOPD).
+- Estudiar las posibilidades que ofrecen los SI,s existentes con los que tenga que integrarse la nueva aplicación.
+- Delimitar un catálogo de requisitos que permita terminar el proceso de diseño no más tarde del día 30 de junio.
 
-2.
-La nueva aplicación afectará a todos los alumnos del curso DIM. Se guardará un histórico de cursos finalizados, siendo éste consultable por parte de los alumnos correspondientes de dichos cursos.
+2. La nueva aplicación afectará a todos los alumnos del curso DIM. Se guardará un histórico de cursos finalizados, siendo éste consultable por parte de los alumnos correspondientes de dichos cursos.
 
 # **EVS 1.2.- IDENTIFICACIÓN DEL ALCANCE DEL SISTEMA**
 
@@ -33,7 +32,7 @@ El objetivo que se pretende es realizar una nueva aplicación que mejore el sist
 
 Los usuarios que participan en el EVS son:
 
-- --Equipo 1 de trabajo (3 alumnos).
-- --Cliente final: profesor de la asignatura.
+- Equipo 1 de trabajo (3 alumnos).
+- Cliente final: profesor de la asignatura.
 
 Se seguirá el plan de trabajo dado por el profesor para recabar información y entregar los trabajos correspondientes. Cuando se considere necesario, se entrevistará al cliente para obtener la información que se considere necesaria.

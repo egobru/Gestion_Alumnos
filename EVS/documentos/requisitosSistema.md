@@ -18,16 +18,16 @@ Cumple con todos los requisitos funcionales marcados para el sistema.
 
 Los dos grandes inconvenientes son:
 
-- --No se controla la lógica de la aplicación ni el alojamiento de los datos.
-- --El precio es un hándicap, sobre todo para el histórico de datos que se quieren guardar de los antiguos alumnos del DIM.
-- --Dispone de muchas más funcionalidades que conllevan a un aprendizaje de uso y que no sea intuitiva.
+- No se controla la lógica de la aplicación ni el alojamiento de los datos.
+- El precio es un hándicap, sobre todo para el histórico de datos que se quieren guardar de los antiguos alumnos del DIM.
+- Dispone de muchas más funcionalidades que conllevan a un aprendizaje de uso y que no sea intuitiva.
 
 ### - **Alternativa 3:**
 
 Con características similares a la alternativa 2, los principales inconvenientes son:
 
-- --Adaptarse al diseño ya realizado y no personalizado a la solicitud del cliente.
-- --Disponer de muchas más funcionalidades que conllevan a un aprendizaje de uso y que no sea intuitiva
+- Adaptarse al diseño ya realizado y no personalizado a la solicitud del cliente.
+- Disponer de muchas más funcionalidades que conllevan a un aprendizaje de uso y que no sea intuitiva
 
 ## **EVS 5.2.- ESTUDIO DE LOS RIESGOS**
 
@@ -51,24 +51,24 @@ El riesgo de esta alternativa es medio, implica instalar un Sistema libre que es
 
 ### - **Alternativa 1 supone:**
 
-- --Una semana para el estudio de la situación actual.
-- --Dos semanas para el análisis y diseño del producto.
-- --Un mes para la construcción de la aplicación.
-- --Una semana para su implantación, pruebas y uso simultáneo con el sistema vigente.
-- --Un día para la formación del administrador del sistema.
+- Una semana para el estudio de la situación actual.
+- Dos semanas para el análisis y diseño del producto.
+- Un mes para la construcción de la aplicación.
+- Una semana para su implantación, pruebas y uso simultáneo con el sistema vigente.
+- Un día para la formación del administrador del sistema.
 
 ### - **Alternativa 2 supone:**
 
-- --Una semana para el estudio de la situación actual.
-- --Dos semanas para el estudio del nuevo producto.
-- --Una semana para para su implantación, pruebas y uso simultáneo con el sistema vigente.
-- --Dos días de formación de los usuarios Administradores.
-- --Un día de formación para los usuarios Alumnos.
+- Una semana para el estudio de la situación actual.
+- Dos semanas para el estudio del nuevo producto.
+- Una semana para para su implantación, pruebas y uso simultáneo con el sistema vigente.
+- Dos días de formación de los usuarios Administradores.
+- Un día de formación para los usuarios Alumnos.
 
 ### - **Alternativa 3 supone:**
 
-- --Una semana para el estudio de la situación actual.
-- --Dos semanas para el estudio del nuevo producto.
-- --Un mes para implantación, su implantación, pruebas y uso simultáneo con el sistema vigente.
-- --Dos días de formación de los usuarios Administradores.
-- --Un día de formación para los usuarios Alumnos.
+- Una semana para el estudio de la situación actual.
+- Dos semanas para el estudio del nuevo producto.
+- Un mes para implantación, su implantación, pruebas y uso simultáneo con el sistema vigente.
+- Dos días de formación de los usuarios Administradores.
+- Un día de formación para los usuarios Alumnos.

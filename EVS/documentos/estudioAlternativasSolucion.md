@@ -10,15 +10,15 @@ En lo que respecta a las alternativas software:
 
 ### - **Alternativa 1:**
 
-- **oo** Desarrollo de una aplicación en entorno WEB, en lenguaje JAVA y SGDB a definir.
+-  Desarrollo de una aplicación en entorno WEB, en lenguaje JAVA y SGDB a definir.
 
 ### - **Alternativa 2:**
 
-- **oo** Compra de plataforma Comercial  [Additio](https://www.additioapp.com/es)
+-  Compra de plataforma Comercial  [Additio](https://www.additioapp.com/es)
 
 ### - **Alternativa 3:**
 
-- **oo** Plataforma de Software Libre como [rosariosis](https://github.com/francoisjacquet/rosariosis)
+-  Plataforma de Software Libre como [rosariosis](https://github.com/francoisjacquet/rosariosis)
 
 ## **EVS 4.2.- DESCRIPCIÓN DE LAS ALTERNATIVAS DE SOLUCIÓN**
 

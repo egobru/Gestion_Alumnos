@@ -2,11 +2,11 @@
 
 ## **EVS 3.1.- IDENTIFICACIÓN DE LAS DIRECTRICES Y TÉCNICAS DE GESTIÓN**
 
-El desarrollo de la aplicación se ajustará a la metodología MÉTRICA v.3.0 en cuanto a documentación, y a la metodología SCROOM en cuanto a planificación, análisis, desarrollo y construcción de sistemas de información.
+El desarrollo de la aplicación se ajustará a la metodología MÉTRICA v.3.0 en cuanto a documentación, y a la metodología SCRUM en cuanto a planificación, análisis, desarrollo y construcción de sistemas de información.
 
 ## **EVS 3.2/3.3.- IDENTIFICACIÓN Y CATALOGACIÓN DE REQUISITOS**
 
-1. Requisitos Funcionales
+### 1. Requisitos Funcionales
 
 | REQUISITO | FUENTE | DESCRIPCION | PRIORIDAD |
 | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ El desarrollo de la aplicación se ajustará a la metodología MÉTRICA v.3.0 en
 | RF15 | CLIENTE | El Sistema deberá almacenar un histórico de todos los cursos finalizados y no borrados permitiendo la consulta por parte del Administrador. | Media |
 | RF16 | CLIENTE | El Administrador podrá acceder a los datos de contacto de los antiguos alumnos. | Baja |
 
-1. Requisitos No Funcionales
+### 2. Requisitos No Funcionales
 
 | REQUISITO | FUENTE | DESCRIPCION | PRIORIDAD |
 | --- | --- | --- | --- |
@@ -36,6 +36,6 @@ El desarrollo de la aplicación se ajustará a la metodología MÉTRICA v.3.0 en
 | RNF3 | CLIENTE | El Sistema deberá ser capaz de operar adecuadamente con hasta **20** usuarios con sesiones concurrentes. | Media |
 | RNF4 | CLIENTE | El Sistema obligará a que las fotografías tengan un tamaño de 650 x 945 píxeles y un tamaño máximo de 10 KB. | Alta |
 
-1. Restricciones
+### 3. Restricciones
 
 La principal restricción con la que nos encontramos en este proyecto es la temporal, dado que al tratarse de un proyecto de prácticas el tiempo está limitado a los 2 meses de duración de la asignatura de Dirección y Gestión de Proyectos del Curso DIM.
