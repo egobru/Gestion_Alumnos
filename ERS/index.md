@@ -58,6 +58,6 @@
 
 ## **4.**        **APROBACIÓN DEL ERS.**        
 
-**4.1.**         **PRESENTACIÓN Y APROBACION DEL ANÁLISIS DEL SISTEMA DE INFORMACIÓN.**         
+**4.1.**         **PRESENTACIÓN Y APROBACION DEL ERS HIBRIDO.**         
 
 ## **ANEXO I.**    **[MATRIZ DE CUMPLIMIENTO DE REQUISITOS.](documentos/matrizTrazabilidad.md)**         
