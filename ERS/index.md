@@ -18,9 +18,9 @@
 
 **2.1.**         **OBTENCIÓN DE REQUISITOS**.        
 
-2.1.1.        INTERFACES DE USUARIO.        
+2.1.1.        ~~INTERFACES DE USUARIO.~~       
 
-2.1.2.        INTERFACES DE HARDWARE.        
+2.1.2.        ~~INTERFACES DE HARDWARE.~~        
 
 2.1.3.        [INTERFACES DE SOFTWARE.](documentos/requisitosSoftware.md)        
 
@@ -32,11 +32,11 @@
 
 2.1.7.        [REQUISITOS DE SEGURIDAD.](documentos/requisitosSeguridad.md)        
 
-2.1.8.        REQUISITOS DE MANTENIMIENTO.        
+2.1.8.        ~~REQUISITOS DE MANTENIMIENTO.~~        
 
-2.1.9.        REQUISITOS DE ACCESIBILIDAD.        
+2.1.9.        ~~REQUISITOS DE ACCESIBILIDAD.~~        
 
-2.1.10.        REQUISITOS DE FACILIDAD DE USO.        
+2.1.10.        ~~REQUISITOS DE FACILIDAD DE USO.~~        
 
 **2.2.**         **ESPECIFICACION CASOS DE USO.** 
 
@@ -44,15 +44,15 @@
 
 2.2.2           [ESPECIFICACION CASOS DE USO](documentos/especificacionCasosUso.md)
 
-**2.3.**         **ANÁLISIS DE REQUISITOS.**         
+**2.3.**         [**ANÁLISIS DE REQUISITOS.**](documentos/analisisDeRequisitos.md)         
 
-**2.4.**         **VALIDACION DE REQUISITOS.**         
+**2.4.**         [**VALIDACION DE REQUISITOS.**](documentos/validacionDeRequisitos.md)         
 
 ## **3.**        **DEFINICIÓN DE INTERFACES DE USUARIO.**        
 
 **3.1.**         [**ESPECIFICACIÓN DE PRINCIPIOS GENERALES DE LA INTERFAZ.**](documentos/especificacionInterfaz.md)        
 
-**3.2.**         **IDENTIFICACIÓN DE PERFILES Y DIÁLOGOS.**         
+**3.2.**         ~~**IDENTIFICACIÓN DE PERFILES Y DIÁLOGOS.**~~         
 
 **3.3.**         [**ESPECIFICACIÓN DE FORMATOS INDIVIDUALES DE LA INTERFAZ DE PANTALLA.**](documentos/formatoInterfazDePantalla.md)         
 
