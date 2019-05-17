@@ -1,4 +1,4 @@
-# **ÍNDICE**
+# **ESPECIFICACION REQUISITOS SOFWARE HIBRIDO**
 
 ## **1.**      **DEFINICIÓN DEL SISTEMA.**        
 
