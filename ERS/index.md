@@ -1,6 +1,6 @@
 # **ESPECIFICACION REQUISITOS SOFWARE HIBRIDO** 
 
-#### [PRESENTACION](documentos/presentacionERSHIBRIDO.md)
+#### [PRESENTACION](documentos/PRESENTACION_ERS.html)
 
 ## **1.**      **DEFINICIÓN DEL SISTEMA.**        
 
