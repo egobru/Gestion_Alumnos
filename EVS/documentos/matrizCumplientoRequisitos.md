@@ -1,8 +1,83 @@
 # **        ANEXO 1: MATRIZ DE CUMPLIMIENTO DE REQUISITOS**
 
-| **Alternativa** | **REQUISITOS FUNCIONALES RF** |
-| --- | --- |
-| **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **10** | **11** | **12** | **13** | **14** | **15** | **16** |
-| **Nueva aplicación** | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X | X |
-| **Software comercial** | X | X |   |   | X | X | X | X |   |   | X | X | X |   | X | X |
-| **Software libre** | X | X |   |   | X | X | X | X |   |   | X | X | X |   | X | X |
+<table boder="1">
+  <tr>
+    <th rowspan="2">Alternativa</th>
+    <th colspan="16">REQUISITOS FUNCIONALES</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>10</th>
+    <th>11</th>
+    <th>12</th>
+    <th>13</th>
+    <th>14</th>
+    <th>15</th>
+    <th>16</th>
+  </tr>
+  <tr>
+    <td>**Nueva aplicación**</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>**Software comercial**</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>**Software libre**</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+</table>
