@@ -8,7 +8,7 @@
 
 ## **3.**       **SPRINT BACKLOG**
 
-### **3.1.**    **CLASES DE DISEÑO CU. CONSULTAR LISTA DE ALUMNOS .**
+### **3.1.**    **[CLASES DE DISEÑO CU. CONSULTAR LISTA DE ALUMNOS](archivos/diagramaDeClases.drawio)**
 
 ### **3.2.**     **DIAGRAMA DE SECUENCIA.**
 
