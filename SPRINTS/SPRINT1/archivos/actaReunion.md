@@ -53,7 +53,7 @@ Después de haber realizado la estimación conjunta del esfuerzo necesario pa
 las siguientes tareas, dandolo por aprobado el Product Owner.
 - Definir las clases de diseño del CU5.
 - Realizar el diagrama de secuencia del CU5.
-- PreparaciÓn de una interfaz gráfica.
+- Preparación de una interfaz gráfica.
 - Cargar los alumnos de un curso (DIM).
 - Implementación de las clases de diseño.
 
