@@ -10,7 +10,7 @@
 
 ### **3.1.**    **[CLASES DE DISEÑO CU. CONSULTAR LISTA DE ALUMNOS](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=diagramaDeClases.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FDptoSIC%2FGestion_Alumnos%2Fmaster%2FSPRINTS%2FSPRINT1%2Farchivos%2FdiagramaDeClases.drawio)**
 
-### **3.2.**     **DIAGRAMA DE SECUENCIA.**
+### **3.2.**     **[DIAGRAMA DE SECUENCIA](https://www.draw.io/#HDptoSIC%2FGestion_Alumnos%2Fmaster%2FSPRINTS%2FSPRINT1%2Farchivos%2FDIAGRAMA%20DE%20SECUENCIA.xml)**
 
 ## **4.**       **DIAGRAMA BURNDOWN DEL SPRINT**
 
