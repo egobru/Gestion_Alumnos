@@ -14,7 +14,7 @@
 
 ## **4.**       **DIAGRAMA BURNDOWN DEL SPRINT**
 
-## **5.**       **TABLERO KANBAN**
+## **5.**       **[TABLERO KANBAN](https://github.com/DptoSIC/Gestion_Alumnos/projects/1)**
 
 ## **6.**      **ACTA REVISIÓN DEL SPRINT**    
 
