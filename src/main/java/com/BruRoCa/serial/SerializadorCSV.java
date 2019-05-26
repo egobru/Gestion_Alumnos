@@ -5,12 +5,16 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -56,22 +60,6 @@ public class SerializadorCSV implements AlumnoDAO {
 		return alumnosLeidos;
 	}
 	
-//	public static int guardarListaAJsonPorLineas(Json json, String ruta, List<Alumno> alumnos) {
-//		int numeroAlumnosGuardados = 0;
-//		try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-//	              new FileOutputStream(ruta), "UTF-8"))) {
-//			for (Alumno alumno : alumnos) {
-//				System.out.println("ere");
-//				writer.write(json.toJson(alumno));
-//				numeroAlumnosGuardados++;
-//				writer.newLine();
-//			}
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		
-//		return numeroAlumnosGuardados;
-//	}
 	
 	private static int guardarListaAJsonPorLineas(Json json, List<Alumno> alumnos, String ruta) {
 		int numeroAlumnosGuardados = 0;
@@ -95,6 +83,27 @@ public class SerializadorCSV implements AlumnoDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void guardarStringEnCSV(String rutaCsvGuardar, List<Alumno> alumnos) throws IOException {
+		
+		try (
+	            BufferedWriter writer = Files.newBufferedWriter(Paths.get(rutaCsvGuardar));
+
+	            CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
+	            		//aqui poner la primera fila a nuestro GUSTO SE PUEDE TUNNERAR CON UNA LIST AL GUSTO 
+	                    .withHeader("ID", "Name", "Designation", "Company"));
+	        ) {alumnos.forEach(e-> {
+				try {
+					csvPrinter.printRecord(e);
+					 csvPrinter.flush(); 
+				} catch (IOException e1) {
+					
+					e1.printStackTrace();
+				}
+			});
+	                
+	        }
 	}
 	
 	
@@ -320,6 +329,14 @@ public class SerializadorCSV implements AlumnoDAO {
 	public <T extends Alumno> int guardarAlumnos(List<Alumno> alumnos) {
 		// TODO Auto-generated method stub
 		return guardarListaAJsonPorLineas(json, alumnos, ruta);
+	}
+
+
+
+	@Override
+	public <T extends Alumno> void guardarAlumnos(String ruta, List<Alumno> alumnos) throws IOException {
+		guardarStringEnCSV(ruta, alumnos);
+		
 	}
 
 }

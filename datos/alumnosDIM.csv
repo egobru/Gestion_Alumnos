@@ -1,3 +1,4 @@
-nombre;apellido1;apellido2;nif;vehiculo1marca;vehiculo1modelo;vehiculo1color;vehiculo1matricula;empleo;Cuerpo
-Fulano;Copas;Birras;1234569e;Ford;Mondeo;Negro;0123GGG;Soldado;CGET
-Perico;de Los;Palotes;1234569T;;;;;;
+nombre;apellido1;apellido2;nif;vehiculo1 marca;vehiculo modelo;color;vehiculo 1 matricula;empleo;Cuerpo
+fulano;copas;birras;1234569e;ford;mondeo;negro;0123GGG;Soldado;CGET
+Perico;de;Palotes;1234569T;;;;;;
+Quique;Trepa;Loron;0696969N;;;;;;

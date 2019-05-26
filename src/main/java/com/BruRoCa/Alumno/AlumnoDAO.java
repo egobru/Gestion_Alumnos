@@ -1,5 +1,6 @@
 package com.BruRoCa.Alumno;
 
+import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 
@@ -15,6 +16,7 @@ public interface AlumnoDAO extends JpaRepository<Alumno, Integer> {
     <T extends Alumno> int guardarAlumnos(List<Alumno>  alumnos); 
     <T extends Alumno> T borrarEvento(Alumno alumno);
     <T extends Alumno> boolean actualizarAlumno(Alumno alumno);
+    <T extends Alumno> void guardarAlumnos(String ruta, List<Alumno>  alumnos) throws IOException; 
     
     @Override
     List<Alumno> findAll() ;

@@ -1,5 +1,6 @@
 package com.BruRoCa.Alumno;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -195,6 +196,12 @@ public class Alumno implements AlumnoDAO {
 	public <T extends Alumno> int guardarAlumnos(List<Alumno> alumnos) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public <T extends Alumno> void guardarAlumnos(String ruta, List<Alumno> alumnos) throws IOException {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
