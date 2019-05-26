@@ -15,7 +15,7 @@ public class Empleo extends AbstractNombrable {
 
 	@Override
 	public String toString() {
-		return  (getNombre() == "")? "¿?":getNombre();
+		return  (getNombre().equals(""))? "¿?":getNombre();
 	}
 
 	

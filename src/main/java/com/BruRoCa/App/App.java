@@ -15,7 +15,7 @@ public class App {
 	public static void main(String[] args) {
 		System.out.println("Hola Mundo");
 		
-		List<? extends Alumno> alumnos = new ArrayList<>();
+		List<Alumno> alumnos = new ArrayList<>();
 		Json json = new Json(OutputType.json);
 		String rutaCsv= "datos/alumnosDIM.csv";
 		String rutaJson = "guardados/alumnos.json";
@@ -28,12 +28,19 @@ public class App {
 		
 		alumnos = app.alumnoDAO.findAll();
 	
+//		Alumno primero = alumnos.get(0);
+//		System.out.println(primero);
+//		System.out.println(primero.getDatosPersonales().getVehiculos());
 		
-		alumnos.forEach(e-> System.out.println(e+"imprimie"));
+		alumnos.forEach(e-> System.out.println(e));
 		
 		System.out.println("hasta aqui llega");
 		
 		//guardar en JSON
+		
+		app.alumnoDAO = new SerializadorCSV(rutaJson);
+		app.alumnoDAO.guardarAlumnos(alumnos);
+		
 		
 		//app.alumnoDAO.guardarAlumnos(alumnos.toArray(new Alumno[] {}));
 		

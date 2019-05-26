@@ -7,11 +7,9 @@ import java.io.InputStreamReader;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Stream;
+
 
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -27,6 +25,7 @@ import com.BruRoCa.Alumno.DatosPersonales;
 import com.BruRoCa.Alumno.Empleo;
 import com.BruRoCa.Alumno.Vehiculo;
 import com.esotericsoftware.jsonbeans.Json;
+
 
 public class SerializadorCSV implements AlumnoDAO {
 	
@@ -57,11 +56,28 @@ public class SerializadorCSV implements AlumnoDAO {
 		return alumnosLeidos;
 	}
 	
-	public static int guardarListaAJsonPorLineas(Json json, String ruta, Alumno... alumnos) {
+//	public static int guardarListaAJsonPorLineas(Json json, String ruta, List<Alumno> alumnos) {
+//		int numeroAlumnosGuardados = 0;
+//		try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+//	              new FileOutputStream(ruta), "UTF-8"))) {
+//			for (Alumno alumno : alumnos) {
+//				System.out.println("ere");
+//				writer.write(json.toJson(alumno));
+//				numeroAlumnosGuardados++;
+//				writer.newLine();
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		
+//		return numeroAlumnosGuardados;
+//	}
+	
+	private static int guardarListaAJsonPorLineas(Json json, List<Alumno> alumnos, String ruta) {
 		int numeroAlumnosGuardados = 0;
 		try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
 	              new FileOutputStream(ruta), "UTF-8"))) {
-			for (AlumnoDAO alumno : alumnos) {
+			for (Alumno alumno : alumnos) {
 				writer.write(json.toJson(alumno));
 				numeroAlumnosGuardados++;
 				writer.newLine();
@@ -69,116 +85,75 @@ public class SerializadorCSV implements AlumnoDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 		return numeroAlumnosGuardados;
 	}
 	
-	
+	public static void guardarStringEnFichero(String cadena, String ruta) {
+		try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+	              new FileOutputStream(ruta), "UTF-8"))) {
+			writer.write(cadena);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 	
 
 	private static Alumno deserializarAlumno(String linea) {
 		Alumno alumno ;
-		Vehiculo vehiculo1 = new Vehiculo();
+		//CAMBIO QUE ESTE SEPARADO ENTRE ; A QUE ESTE SEPARADO ENTRE ESPACIO ; ESPACIO
 		String lineaEspacio = linea.replace(";", " ; ");
+		//LEE EL ARRAY ENTRE ; DE ESTA FORMA ELIMNO LOS CAMPOS QUE ESTAN VACIOS
 		String[] campos = lineaEspacio.split(";");
-	//	Stream.of(campos).forEach(c -> c.trim());
+		
+		//ELIMINO EL ESPACIO QUE HAY POR DEANTE Y POR DETRAS DEL ;
 		for (int i = 0; i < campos.length; i++) {
 			campos[i]= campos[i].trim();
 		}
+		
 		String nombreString = campos[0];
 		String apllido1String = campos[1];
 		String apellido2String = campos[2];
 		String nifString = campos[3];
-		System.out.println(Arrays.toString(campos));
-//		String vehiculo1MarcaString = campos[4];
-//		String vehiculo1ModeloString= campos[5];
-//		String vehiculo1ColorString = campos[6];
-//		String vehiculo1MatriculaString = campos[7];
-		String empleoString = campos[8];
-		
+//		System.out.println(Arrays.toString(campos));
+		String vehiculo1MarcaString = campos[4];
+		String vehiculo1ModeloString= campos[5];
+		String vehiculo1ColorString = campos[6];
+		String vehiculo1MatriculaString = campos[7];
+		String empleoString = campos[8];	
 		String cuerpoString = campos[9];
 		
-		
-	
-		
+		//CREO OBJETO dATOS PERSONALES
 		DatosPersonales datosPersonales = new DatosPersonales(nombreString, apllido1String, apellido2String, nifString);
 		
-//		String empleo;
-//		try {
-//			empleo = empleoString;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			empleo ="Sdo. Empleo";
-//		}
+		//CREO OBJETO 
+		Empleo empleo = new Empleo(empleoString);
 		
-		Empleo categoria = new Empleo(empleoString);
+		//CREO EL OBJETO CUERPO 
+		Cuerpo cuerpo = new Cuerpo(cuerpoString);
+
+		//CREO EL OBJETO DATOS MILITARES
+		DatosMilitares datosmilitares = new DatosMilitares(empleo, cuerpo);
 		
-//		String cuerpo;
-//		try {
-//			cuerpo = cuerpoString;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			cuerpo ="Sdo. Empleo";
-//		}
-//				
-		Cuerpo cuerpoM = new Cuerpo(cuerpoString);
-//		
-//	
-		DatosMilitares datosmilitares = new DatosMilitares(categoria, cuerpoM);
-		
-		if(empleoString.equals("") && cuerpoString.equals("")) {
-			
-			Alumno alumnoCivil = new Alumno(datosPersonales);
-			alumno = alumnoCivil;
-			System.out.println(alumnoCivil);
-			
+		//EN FUNCIO DE LOS CAMPOS QUE TIENE DIGO SI ES MILITAR O CIVIL
+		if(empleoString.equals("") && cuerpoString.equals("")) {	
+			alumno = new Alumno(datosPersonales);
+//			System.out.println(alumno);		
 		}
-		else {
-			AlumnoMilitar alumnoMilitar = new AlumnoMilitar(datosPersonales, datosmilitares);
-			alumno = alumnoMilitar;
-			System.out.println(alumnoMilitar);
+		else {		
+			alumno = new AlumnoMilitar(datosPersonales, datosmilitares);
+//			System.out.println(alumno);
 		}
+		//CREO EL OBJETO VEHICULO
+		Vehiculo vehiculo = new Vehiculo(vehiculo1ModeloString + " " + vehiculo1MarcaString, vehiculo1MatriculaString, vehiculo1ColorString);
+		//System.out.println(vehiculo);
 		
-//		String marcaModelo;
-//		try {
-//			if(vehiculo1MarcaString != null && vehiculo1ModeloString !=null) 
-//				marcaModelo = vehiculo1MarcaString + vehiculo1ModeloString;
-//			if(vehiculo1MarcaString == null && vehiculo1ModeloString !=null) 
-//				marcaModelo = "Sdo.Marca" + vehiculo1ModeloString;
-//			if(vehiculo1MarcaString != null && vehiculo1ModeloString ==null) 
-//				marcaModelo =  vehiculo1ModeloString + "Sdo.Modelo" ;
-//			marcaModelo = vehiculo1MarcaString + vehiculo1ModeloString;
-//			
-//		} catch (Exception e) {
-//			System.out.println(e + "peto en el coche");
-//			marcaModelo = "Sdo. MarcaModelo";
-//		}
-//		 String matricula;
-//		 try {
-//			matricula = vehiculo1MatriculaString;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			matricula = "sdo.Matricula";
-//		}
-//		
-//		 String color;
-//		 try {
-//			color = vehiculo1ColorString;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			color = "sdo.Color";
-//		}
-//		 
-//		 if(vehiculo1MatriculaString != null) {
-//			 Vehiculo vehiculo = new Vehiculo(marcaModelo, matricula, color);
-//			 vehiculo1 = vehiculo;
-//		 }else {
-//			vehiculo1 = null;
-//		}
+		//A�ADO EL VEHICULO AL ALUMNO
+		alumno.getDatosPersonales().addVehiculos(vehiculo);
+
 		
 		
-		System.out.println(alumno);
+//		System.out.println(alumno);
 		return alumno;
 	}
 
@@ -320,10 +295,7 @@ public class SerializadorCSV implements AlumnoDAO {
 		return false;
 	}
 
-	@Override
-	public  int guardarAlumnos(Alumno... alumnos) {
-		return guardarListaAJsonPorLineas(json, ruta, alumnos);
-	}
+	
 
 	@Override
 	public <T extends Alumno> T borrarEvento(Alumno alumno) {
@@ -340,6 +312,14 @@ public class SerializadorCSV implements AlumnoDAO {
 	@Override
 	public List<Alumno> findAll() {
 		return getAlumnos(ruta);
+	}
+
+
+
+	@Override
+	public <T extends Alumno> int guardarAlumnos(List<Alumno> alumnos) {
+		// TODO Auto-generated method stub
+		return guardarListaAJsonPorLineas(json, alumnos, ruta);
 	}
 
 }

@@ -30,7 +30,7 @@ public class Alumno implements AlumnoDAO {
 
 	@Override
 	public String toString() {
-		return  "Civil " + getDatosPersonales().toString() ;
+		return  "Civil " + getDatosPersonales().toString() + getDatosPersonales().getVehiculos().get(0).toString();
 	}
 
 	@Override
@@ -171,11 +171,7 @@ public class Alumno implements AlumnoDAO {
 		return false;
 	}
 
-	@Override
-	public <T extends Alumno> int guardarAlumnos(Alumno... alumnos) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 	@Override
 	public <T extends Alumno> T borrarEvento(Alumno alumno) {
@@ -193,6 +189,12 @@ public class Alumno implements AlumnoDAO {
 	public List<Alumno> findAll() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public <T extends Alumno> int guardarAlumnos(List<Alumno> alumnos) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	

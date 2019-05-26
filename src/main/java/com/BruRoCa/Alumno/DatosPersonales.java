@@ -1,5 +1,6 @@
 package com.BruRoCa.Alumno;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import es.lanyu.commons.identificable.AbstractNombrable;
@@ -13,7 +14,7 @@ public class DatosPersonales extends AbstractNombrable {
 	private int codigoPostal;
 	private List <Integer> telefonos;
 	private List <String> mailsParticular;
-	private List <Vehiculo> vehiculos;
+	private List <Vehiculo> vehiculos =  new ArrayList<>();
 	
 	
 	
@@ -83,13 +84,20 @@ public class DatosPersonales extends AbstractNombrable {
 	}
 	
 	//idem telefono
-	protected void addMailsParticular(String mailsParticular) {
-	//	this.mailsParticular = mailsParticular;
+	protected void addMailParticular(String mailParticular) {
+		
+	mailsParticular.add(mailParticular);
 	}
 	
 	//idem anterior
-	protected void addVehiculos(Vehiculo vehiculo) {
-		
+	public void addVehiculos(Vehiculo vehiculo) {
+		if(vehiculos != null) {
+		vehiculos.add(vehiculo);
+		}
+		else {
+			List<Vehiculo> vehiculos = new ArrayList<>();
+			vehiculos.add(vehiculo);
+		}
 	}
 
 	public DatosPersonales() {
@@ -121,12 +129,12 @@ public class DatosPersonales extends AbstractNombrable {
 
 	@Override
 	public String toString() {
-		return  getApellido1() + " " + getApellido2() + ",  " + getNombre() + " " + getNif();
+		return  getApellido1() + " " + getApellido2() + ",  " + getNombre() + " " + getNif() + " " + ((getVehiculos().isEmpty())? "No tiene vehiculos": getVehiculos()) ;
 	}
 
 	
 	
-	
+	//alumnos.forEach(e-> System.out.println(e))
 	
 	
 	

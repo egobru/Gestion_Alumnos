@@ -33,7 +33,7 @@ public class AlumnoMilitar extends Alumno {
 
 	@Override
 	public String toString() {
-		return  getDatosMilitares().getEmpleo().toString();
+		return  getDatosMilitares().getEmpleo().toString() + " " + getDatosMilitares().getCuerpo().toString() +  " " + getDatosPersonales();
 	}
 	
 	

@@ -12,7 +12,7 @@ public interface AlumnoDAO extends JpaRepository<Alumno, Integer> {
 		return findAll();
 	}
    // Collection<? extends Alumno> getAlumnos(Curso curso);
-    <T extends Alumno> int guardarAlumnos(Alumno... alumnos); 
+    <T extends Alumno> int guardarAlumnos(List<Alumno>  alumnos); 
     <T extends Alumno> T borrarEvento(Alumno alumno);
     <T extends Alumno> boolean actualizarAlumno(Alumno alumno);
     
