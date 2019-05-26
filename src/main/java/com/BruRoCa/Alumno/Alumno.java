@@ -9,7 +9,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
-public class Alumno implements AlumnoDAO {
+import es.lanyu.commons.identificable.AbstractNombrable;
+
+public class Alumno extends AbstractNombrable implements AlumnoDAO {
 	private DatosPersonales datosPersonales;
 
 	public DatosPersonales getDatosPersonales() {
@@ -29,6 +31,11 @@ public class Alumno implements AlumnoDAO {
 		this.datosPersonales = datosPersonales;
 	}
 
+	
+	
+	
+	
+	
 	@Override
 	public String toString() {
 		return  "Civil " + getDatosPersonales().toString() + getDatosPersonales().getVehiculos().get(0).toString();

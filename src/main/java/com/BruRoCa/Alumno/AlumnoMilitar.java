@@ -7,7 +7,7 @@ public class AlumnoMilitar extends Alumno {
 		return datosMilitares;
 	}
 
-	protected void setDatosMilitares(DatosMilitares datosMilitares) {
+	public void setDatosMilitares(DatosMilitares datosMilitares) {
 		this.datosMilitares = datosMilitares;
 	}
 

@@ -40,11 +40,7 @@ public class App {
 		app.alumnoDAO = new SerializadorCSV(rutaCsv);
 		
 		alumnos = app.alumnoDAO.findAll();
-	
-//		Alumno primero = alumnos.get(0);
-//		System.out.println(primero);
-//		System.out.println(primero.getDatosPersonales().getVehiculos());
-		
+			
 		alumnos.forEach(e-> System.out.println(e));
 		
 		System.out.println("hasta aqui llega");
@@ -55,28 +51,13 @@ public class App {
 //		app.alumnoDAO.guardarAlumnos(alumnos);
 		
 		
-		//GUARDAR A csv CON LIBRERIA
+		//GUARDAR A CSV 
 		
 		app.alumnoDAO = new SerializadorCSV(rutaCsvGuardar);
 		
 		app.alumnoDAO.guardarAlumnos(rutaCsvGuardar, alumnos);
 		
-//		try (
-//	            BufferedWriter writer = Files.newBufferedWriter(Paths.get(rutaCsvGuardar));
-//
-//	            CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
-//	                    .withHeader("ID", "Name", "Designation", "Company"));
-//	        ) {alumnos.forEach(e-> {
-//				try {
-//					csvPrinter.printRecord(e);
-//					 csvPrinter.flush(); 
-//				} catch (IOException e1) {
-//					
-//					e1.printStackTrace();
-//				}
-//			});
-//	                
-//	        }
+//		
 	    }
 		
 		
