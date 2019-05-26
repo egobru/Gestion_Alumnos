@@ -5,4 +5,4 @@
 # **[ESPECIFICACION REQUISITOS SOFWARE HIBRIDO.](documentos/ERS)**
 
 # **SPRINTS.**
-## **[SPRINT1](documentos/SPRINTS/SPRINT1)**
+## **[SPRINT1](documentos/SPRINTS/SPRINT1/index.md)**
