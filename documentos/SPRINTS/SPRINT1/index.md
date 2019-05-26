@@ -3,9 +3,9 @@
 #### [PRESENTACION](#)
 #### [CODIGO](java/readme.md)
 
-## **1.**       **[ESTIMACION PUNTOS DE HISTORIA](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/SPRINTS/SPRINT1/archivos/puntos_historia.md)**
+## **1.**       **[ESTIMACION PUNTOS DE HISTORIA](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/documentos/SPRINTS/SPRINT1/archivos/puntos_historia.md)**
 
-## **2.**       **[ACTA REUNION PRODUCT OWNER](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/SPRINTS/SPRINT1/archivos/actaReunion.md)**  
+## **2.**       **[ACTA REUNION PRODUCT OWNER](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/documentos/SPRINTS/SPRINT1/archivos/actaReunion.md)**  
 
 ## **3.**       **SPRINT BACKLOG**
 
@@ -13,7 +13,7 @@
 
 ### **3.2.**     **[DIAGRAMA DE SECUENCIA](https://www.draw.io/#HDptoSIC%2FGestion_Alumnos%2Fmaster%2FSPRINTS%2FSPRINT1%2Farchivos%2FDIAGRAMA%20DE%20SECUENCIA.xml)**
 
-## **4.**       **[DIAGRAMA BURNDOWN DEL SPRINT](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/SPRINTS/SPRINT1/archivos/DIAGRAMA%20BURNDOWN%20SGAL.xlsx)**
+## **4.**       **[DIAGRAMA BURNDOWN DEL SPRINT](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/documentos/SPRINTS/SPRINT1/archivos/DIAGRAMA%20BURNDOWN%20SGAL.xlsx)**
 
 ## **5.**       **[TABLERO KANBAN](https://github.com/DptoSIC/Gestion_Alumnos/projects/1)**
 
