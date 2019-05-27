@@ -3,16 +3,16 @@ package com.BruRoCa.Alumno;
 import es.lanyu.commons.identificable.AbstractNombrable;
 
 public class DatosMilitares extends AbstractNombrable {
-	private Empleo empleo;
+	private Empleo empleoMilitar;
 	private Ejercito ejercito;
 	private Cuerpo cuerpo;
-	private String mail;
+	private String mailMilitar;
 	private String destinoAnterior;
-	private int escalafon;
+	private int numeroEscalafon;
 	
 	
 	public Empleo getEmpleo() {
-		return empleo;
+		return empleoMilitar;
 	}
 	public Ejercito getEjercito() {
 		return ejercito;
@@ -23,7 +23,7 @@ public class DatosMilitares extends AbstractNombrable {
 	}
 	
 	public String getMail() {
-		return mail;
+		return mailMilitar;
 	}
 	
 	public String getDestinoAnterior() {
@@ -31,11 +31,11 @@ public class DatosMilitares extends AbstractNombrable {
 	}
 	
 	public int getEscalafon() {
-		return escalafon;
+		return numeroEscalafon;
 	}
 	
 	protected void setMail(String mail) {
-		this.mail = mail;
+		this.mailMilitar = mail;
 	}
 	
 	protected void setDestinoAnterior(String destinoAnterior) {
@@ -43,7 +43,7 @@ public class DatosMilitares extends AbstractNombrable {
 	}
 	
 	protected void setEscalafon(int escalafon) {
-		this.escalafon = escalafon;
+		this.numeroEscalafon = escalafon;
 	}
 	
 	
@@ -53,20 +53,21 @@ public class DatosMilitares extends AbstractNombrable {
 	
 	public DatosMilitares(Empleo empleo, Cuerpo cuerpo) {
 		super();
-		this.empleo = empleo;
+		this.empleoMilitar = empleo;
 		this.cuerpo = cuerpo;
+		
 
 	}
 	
 	public DatosMilitares(Empleo empleo, Ejercito ejercito, Cuerpo cuerpo, String mail, String destinoAnterior,
 			int escalafon) {
 		super();
-		this.empleo = empleo;
+		this.empleoMilitar = empleo;
 		this.ejercito = ejercito;
 		this.cuerpo = cuerpo;
-		this.mail = mail;
+		this.mailMilitar = mail;
 		this.destinoAnterior = destinoAnterior;
-		this.escalafon = escalafon;
+		this.numeroEscalafon = escalafon;
 	}
 	@Override
 	public String toString() {

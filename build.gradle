@@ -28,7 +28,7 @@ dependencies {
 	implementation 'com.github.esotericsoftware:jsonbeans:master'
     implementation 'com.github.lanyuestudio:lanyucommon:master-SNAPSHOT'
     implementation 'com.github.lanyuestudio:tablelayout-min-gradle:v1'
-     implementation 'com.google.code.gson:gson:2.8.5'//customizarJSON
+    implementation 'com.google.code.gson:gson:2.8.5'//customizarJSON
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	runtime 'com.github.cliftonlabs:json-simple:3.1.0'// para escribir Json

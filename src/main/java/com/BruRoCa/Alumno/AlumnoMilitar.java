@@ -23,6 +23,9 @@ public class AlumnoMilitar extends Alumno {
 		this.datosMilitares = datosmilitares;
 	}
 
+	public AlumnoMilitar(DatosPersonales datosPersonales) {
+		super(datosPersonales);
+	}
 	public AlumnoMilitar(String nombre, String apellido1, String apellido2, DatosMilitares datosMilitares) {
 		super();
 		super.getDatosPersonales().setApellido1(apellido1);

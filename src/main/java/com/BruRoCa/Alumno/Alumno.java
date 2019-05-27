@@ -1,6 +1,7 @@
 package com.BruRoCa.Alumno;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -9,14 +10,28 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
+import com.BruRoCa.Curso.Curso;
+
 import es.lanyu.commons.identificable.AbstractNombrable;
 
 public class Alumno extends AbstractNombrable implements AlumnoDAO {
 	private DatosPersonales datosPersonales;
+	private List<Curso> cursos = new ArrayList<>();
+	
 
 	public DatosPersonales getDatosPersonales() {
 		return datosPersonales;
 	}
+
+	
+	public List<Curso> getCursos() {
+		return cursos;
+	}
+
+
+	public void addCurso(Curso curso) {
+		cursos.add(curso);	}
+
 
 	protected void setDatosPersonales(DatosPersonales datosPersonales) {
 		this.datosPersonales = datosPersonales;
@@ -207,6 +222,16 @@ public class Alumno extends AbstractNombrable implements AlumnoDAO {
 
 	@Override
 	public <T extends Alumno> void guardarAlumnos(String ruta, List<Alumno> alumnos) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	
+
+
+	@Override
+	public void guardarLista(String ruta, List<String> lista) {
 		// TODO Auto-generated method stub
 		
 	}

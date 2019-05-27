@@ -28,6 +28,7 @@ import com.BruRoCa.Alumno.DatosMilitares;
 import com.BruRoCa.Alumno.DatosPersonales;
 import com.BruRoCa.Alumno.Empleo;
 import com.BruRoCa.Alumno.Vehiculo;
+import com.BruRoCa.Curso.Curso;
 import com.esotericsoftware.jsonbeans.Json;
 
 
@@ -76,6 +77,19 @@ public class Serializador implements AlumnoDAO {
 		return numeroAlumnosGuardados;
 	}
 	
+	private static  void guardarListaAJsonLista(Json json, List<String> lista, String ruta) {
+		try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+	              new FileOutputStream(ruta), "UTF-8"))) {
+			for (String string : lista) {
+				writer.write(json.toJson(string));
+				writer.newLine();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 	public static void guardarStringEnFichero(String cadena, String ruta) {
 		try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
 	              new FileOutputStream(ruta), "UTF-8"))) {
@@ -87,8 +101,7 @@ public class Serializador implements AlumnoDAO {
 	
 	public void guardarStringEnCSV(String rutaCsvGuardar, List<Alumno> alumnos) throws IOException {
 		
-		try (
-	            BufferedWriter writer = Files.newBufferedWriter(Paths.get(rutaCsvGuardar));
+		try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(rutaCsvGuardar));
 
 	            CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
 	            		//aqui poner la primera fila a nuestro GUSTO SE PUEDE TUNNERAR CON UNA LIST AL GUSTO 
@@ -131,6 +144,7 @@ public class Serializador implements AlumnoDAO {
 		String vehiculo1MatriculaString = campos[7];
 		String empleoString = campos[8];	
 		String cuerpoString = campos[9];
+		String cursoString = campos [10];
 		
 		//CREO OBJETO dATOS PERSONALES
 		DatosPersonales datosPersonales = new DatosPersonales(nombreString, apllido1String, apellido2String, nifString);
@@ -142,7 +156,7 @@ public class Serializador implements AlumnoDAO {
 		Cuerpo cuerpo = new Cuerpo(cuerpoString);
 
 		//CREO EL OBJETO DATOS MILITARES
-		DatosMilitares datosmilitares = new DatosMilitares(empleo, cuerpo);
+		DatosMilitares datosmilitares = new DatosMilitares(empleo, null, cuerpo, "", "", 0);// DatosMilitares(empleo, cuerpo);
 		
 		//EN FUNCIO DE LOS CAMPOS QUE TIENE DIGO SI ES MILITAR O CIVIL
 		if(empleoString.equals("") && cuerpoString.equals("")) {	
@@ -159,8 +173,15 @@ public class Serializador implements AlumnoDAO {
 		
 		//A�ADO EL VEHICULO AL ALUMNO
 		alumno.getDatosPersonales().addVehiculos(vehiculo);
-
 		
+		//A�ADO EL mailPrticular AL ALUMNO
+		alumno.getDatosPersonales().addMailParticular("");
+
+		//A�ADO EL mailPrticular AL ALUMNO
+		alumno.getDatosPersonales().AddTelefono(0);
+
+		//A�ADO EL curso AL ALUMNO
+		alumno.addCurso(new Curso(cursoString));
 		
 //		System.out.println(alumno);
 		return alumno;
@@ -338,5 +359,17 @@ public class Serializador implements AlumnoDAO {
 		guardarStringEnCSV(ruta, alumnos);
 		
 	}
+
+
+
+	@Override
+	public void guardarLista(String ruta, List<String> lista) {
+		guardarLista(ruta, lista);
+		
+	}
+
+
+
+	
 
 }

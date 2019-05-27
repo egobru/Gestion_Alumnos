@@ -1,5 +1,6 @@
 package com.BruRoCa.Alumno;
 
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,11 +13,16 @@ public class DatosPersonales extends AbstractNombrable {
 	private Domicilio domicilio;
 	private String ciudad;
 	private int codigoPostal;
-	private List <Integer> telefonos;
-	private List <String> mailsParticular;
+	private List <Integer> telefonos = new ArrayList<>();
+	private List <String> mailsParticular = new ArrayList<>();
 	private List <Vehiculo> vehiculos =  new ArrayList<>();
+	private String foto;
 	
 	
+	
+	public String getFoto() {
+		return foto;
+	}
 	
 	public String getApellido1() {
 		return apellido1;
@@ -77,16 +83,30 @@ public class DatosPersonales extends AbstractNombrable {
 		this.codigoPostal = codigoPostal;
 	}
 	
-	//IMPLEMENTAR TENIENDO ENCUENTA QUE LA LISTA PUEDE ESTAR VACIA Y HAY QUE CREARLA
-	//COMO REFERENCIA VER METODOS DE gESTORiDENTIFICABLES DE LANYU.COMMONS.IDENTIFICABE 
-	protected void AddTelefono(int telefono) {
-		//this.telefonos = telefonos;
+	
+	public void AddTelefono(int telefono) {
+		if(telefonos != null) {
+			telefonos.add(telefono);
+		}
+		else {
+			List<Integer> telefonos = new ArrayList<>();
+			telefonos.add(telefono);
+		}
+	
 	}
 	
+	
 	//idem telefono
-	protected void addMailParticular(String mailParticular) {
-		
-	mailsParticular.add(mailParticular);
+	public void addMailParticular(String mailParticular) {
+		if(mailsParticular != null) {
+			mailsParticular.add(mailParticular);
+		}
+		else {
+			List<String> mailsParticular = new ArrayList<>();
+			mailsParticular.add(mailParticular);
+
+		}
+	
 	}
 	
 	//idem anterior
@@ -125,6 +145,11 @@ public class DatosPersonales extends AbstractNombrable {
 		this.apellido1 = apellido1;
 		this.apellido2 = apellido2;
 		this.nif = nif;
+		this.domicilio = new Domicilio("", "", "", "");
+		this.ciudad = "";
+		this.codigoPostal = 0;
+		this.foto = "";
+		
 	}
 
 	@Override
