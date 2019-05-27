@@ -129,7 +129,7 @@ public class DatosPersonales extends AbstractNombrable {
 
 	@Override
 	public String toString() {
-		return  getApellido1() + " " + getApellido2() + ",  " + getNombre() + " " + getNif() + " " + ((getVehiculos().isEmpty())? "No tiene vehiculos": getVehiculos()) ;
+		return  getApellido1() + "," + getApellido2() + "," + getNombre() + "," + getNif() + "," + ((getVehiculos().isEmpty())? "No tiene vehiculos": getVehiculos()) ;
 	}
 
 	

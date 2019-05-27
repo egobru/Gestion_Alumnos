@@ -8,14 +8,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVPrinter;
-
 import com.BruRoCa.Alumno.Alumno;
 import com.BruRoCa.Alumno.AlumnoDAO;
-import com.BruRoCa.serial.SerializadorCSV;
+import com.BruRoCa.serial.Serializador;
 import com.esotericsoftware.jsonbeans.Json;
 import com.esotericsoftware.jsonbeans.OutputType;
+import com.google.gson.Gson;
 
 public class App {
 	AlumnoDAO alumnoDAO;
@@ -27,7 +25,7 @@ public class App {
 		
 		List<Alumno> alumnos = new ArrayList<>();
 		Json json = new Json(OutputType.json);
-		String rutaJson =  "datos/alumnos.json";
+		String rutaJson =  "guardados/alumnos.json";
 		String rutaCsv= "datos/alumnosDIM.csv";
 		
 		String rutaCsvGuardar = "guardados/alumnos.csv";
@@ -37,7 +35,7 @@ public class App {
 		
 		//LEER DESDE EL CSV
 		
-		app.alumnoDAO = new SerializadorCSV(rutaCsv);
+		app.alumnoDAO = new Serializador(rutaCsv);
 		
 		alumnos = app.alumnoDAO.findAll();
 			
@@ -47,15 +45,23 @@ public class App {
 		
 		//guardar en JSON
 		
-//		app.alumnoDAO = new SerializadorCSV(rutaJson);
-//		app.alumnoDAO.guardarAlumnos(alumnos);
+		app.alumnoDAO = new Serializador(rutaJson);
+		app.alumnoDAO.guardarAlumnos(alumnos);
 		
 		
 		//GUARDAR A CSV 
 		
-		app.alumnoDAO = new SerializadorCSV(rutaCsvGuardar);
+		app.alumnoDAO = new Serializador(rutaCsvGuardar);
 		
 		app.alumnoDAO.guardarAlumnos(rutaCsvGuardar, alumnos);
+		
+		Gson gson = new Gson();
+		
+		
+			String json1 = gson.toJson(alumnos.get(0).getDatosPersonales().getNombre());
+			
+		System.out.println(json1);
+		
 		
 //		
 	    }

@@ -21,12 +21,15 @@ jcenter()
 dependencies {
  compile 'com.google.guava:guava:23.0'
  compile "org.apache.commons:commons-csv:1.5"
+ //compile "com.googlecode.json-simple"
  testCompile 'junit:junit:4.12'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'com.github.esotericsoftware:jsonbeans:master'
     implementation 'com.github.lanyuestudio:lanyucommon:master-SNAPSHOT'
     implementation 'com.github.lanyuestudio:tablelayout-min-gradle:v1'
+     implementation 'com.google.code.gson:gson:2.8.5'//customizarJSON
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtime 'com.github.cliftonlabs:json-simple:3.1.0'// para escribir Json
 }

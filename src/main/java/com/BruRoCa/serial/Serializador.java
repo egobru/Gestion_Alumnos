@@ -31,12 +31,12 @@ import com.BruRoCa.Alumno.Vehiculo;
 import com.esotericsoftware.jsonbeans.Json;
 
 
-public class SerializadorCSV implements AlumnoDAO {
+public class Serializador implements AlumnoDAO {
 	
 	private final String ruta;	
-	Json json;
+	Json json = new Json();
 	
-	public SerializadorCSV(String rutaAcceso) {
+	public Serializador(String rutaAcceso) {
 		super();
 		this.ruta = rutaAcceso;
 	}
@@ -92,7 +92,7 @@ public class SerializadorCSV implements AlumnoDAO {
 
 	            CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
 	            		//aqui poner la primera fila a nuestro GUSTO SE PUEDE TUNNERAR CON UNA LIST AL GUSTO 
-	                    .withHeader("ID", "Name", "Designation", "Company"));
+	                    .withHeader("EMPLEO", "CUERPO", "PRIMER APELLIDO", "SEGUNDO APELLIDO", "NOMBRE", "NIF", "VEHICULO"));
 	        ) {alumnos.forEach(e-> {
 				try {
 					csvPrinter.printRecord(e);
