@@ -19,7 +19,7 @@ function cargarAlumnos() {
     for (let i = 0; i < alumnos.length; i++) {
         document.querySelector('#orlaAlumnos').innerHTML +=
             '<div class="col-lg-2 col-md-3 col-sm-4 col-12"><div class="student-inner-std">' +
-            '<div class="student-img"><img src="' + alumnos[i].datosPersonales["foto"] + '" alt="Imagen no disponible" /></div>' +
+            '<div class="student-img"><img src="' + alumnos[i].datosPersonales["foto"] + '" style="height:100px" alt="Imagen no disponible" /></div>' +
             '<div class="student-dtl">' +
             '<h5><span id="alumno' + (i + 1) + '">' +
             alumnos[i].datosPersonales["apellido1"] +
