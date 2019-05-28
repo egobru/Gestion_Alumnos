@@ -44,6 +44,7 @@ function listarAlumnos() {
         var col7 = document.createElement('td');
         var col8 = document.createElement('td');
         foto.setAttribute('width','70rem');
+        foto.setAttribute('height','100rem');
         foto.src ='' + alumnos[i].datosPersonales["foto"];
         foto.alt = '' + alumnos[i].datosPersonales["foto"];
         check.setAttribute('type','checkbox');     
