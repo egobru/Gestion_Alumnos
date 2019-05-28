@@ -9,17 +9,17 @@ function cargarMenu() {
                 '<div class="left-custom-menu-adp-wrap comment-scrollbar">' +
                     '<nav class="sidebar-nav left-sidebar-menu-pro">' +
                         '<ul class="metismenu" id="menu1">' +
-                            '<li class="active">' +
-                                '<a class="has-arrow" href="#" aria-expanded="false">' +
-                                    '<span class="educate-icon educate-student icon-wrap"></span>' +
-                                    '<span class="mini-click-non">Alumnos</span>' +
-                                '</a>' +
-                                '<ul class="submenu-angle" aria-expanded="false">' +
-                                    '<li><a title="Listado con foto" href="consultarAlumnos.html"><span class="mini-sub-pro">Orla</span></a></li>' +
-                                    '<li><a title="Listado de alumnos" href="listadoAlumnos.html"><span class="mini-sub-pro">Listados</span></a>' +
-                                    '</li>' +
-                                '</ul>' +
-                            '</li>' +
+                            '<li>' +
+                            '<a class="has-arrow" data-toggle="collapse" data-target="#adminAlumnos" href="#" aria-expanded="false">' +
+                                '<span class="educate-icon educate-student icon-wrap"></span>' +
+                                '<span class="mini-click-non">Alumnos</span>' +
+                            '</a>' +
+                            '<ul id="adminAlumnos" class="submenu-angle collapse dropdown-header-top" aria-expanded="false">' +
+                                '<li><a title="Listado con foto" href="consultarAlumnos.html"><span class="mini-sub-pro">Orla</span></a></li>' +
+                                '<li><a title="Listado de alumnos" href="listadoAlumnos.html"><span class="mini-sub-pro">Listados</span></a>' +
+                                '</li>' +
+                            '</ul>' +
+                        '</li>' +
                             /*
                             '<li>' +
                                 '<a class="has-arrow" href="#" aria-expanded="false">' +
