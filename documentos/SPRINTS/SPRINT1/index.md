@@ -19,5 +19,5 @@
 
 ## **6.**      **ACTA REVISIÓN DEL SPRINT**    
 
-## **7.**       **[INCREMENTO](archivos/GUI/listadoAlumnos.html)**
+## **7.**       **[INCREMENTO](archivos/GUI/login.html)**
 
