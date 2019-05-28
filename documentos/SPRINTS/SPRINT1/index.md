@@ -1,6 +1,6 @@
 # **SPRINT 1 GESTION DE ALUMNOS**
 
-#### [PRESENTACION](archivos/SGAL%20SPRINT%201.html)
+#### [PRESENTACION](archivos/SGALSPRINT1.html)
 #### [CODIGO](java/readme.md)
 
 ## **1.**       **[ESTIMACION PUNTOS DE HISTORIA](https://github.com/DptoSIC/Gestion_Alumnos/blob/master/documentos/SPRINTS/SPRINT1/archivos/puntos_historia.md)**
@@ -19,5 +19,5 @@
 
 ## **6.**      **ACTA REVISIÓN DEL SPRINT**    
 
-## **7.**       **INCREMENTO**
+## **7.**       **[INCREMENTO](archivos/GUI/listadoAlumnos.html)**
 
